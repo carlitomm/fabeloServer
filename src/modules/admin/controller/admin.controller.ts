@@ -19,6 +19,7 @@ export class AdminController {
 
     @Get()
     get(): any {
+        console.log("an andim request was made")
         return this.service.finAll();
     }
 

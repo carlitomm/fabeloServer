@@ -14,8 +14,8 @@ import { Admin } from '../admin/entity/admin';
             type: 'mysql',
             host: 'localhost',
             port: 3306,
-            username: 'Sandy',
-            password: 'lamisma',
+            username: process.env.fabelodb_username,
+            password: process.env.fabelodb_password,
             database: 'fabelodatabase',
             entities: [
                 ProjectEntity,
